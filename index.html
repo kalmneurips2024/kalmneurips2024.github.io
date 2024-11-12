@@ -123,10 +123,8 @@
       <img src="static/images/meta1.gif" alt="Alt text" style="width: 33%; height: auto;"/>
       <img src="static/images/meta2.gif" alt="Alt text" style="width: 33%; height: auto;"/>
       <h2 class="subtitle has-text-left">
-        We introduce KALM method, which investigates a possibility of utilizing the knowledge in pre-trained LLM in a form of imaginary rollouts for novel text goals.
-        <b>(Left)</b> Goal: Use the green ball as the nucleus of the circle, arranging the rest around it.
-        <b>(Middle)</b> Goal: Employ the gripper tool to pick up the desired object and move it to the intended location, notwithstanding the hindrance of a wall in the path.
-        <b>(Right)</b> Goal: Position the gripper to reach the target area, with awareness of the wall obstructing the path.
+        We introduce KALM method, which investigates utilizing the knowledge within the pre-trained LLMs in a form of imaginary rollouts for novel text goals. <b>(Left)</b> Goal: Use the green ball as the nucleus of the circle, arranging the rest around it.
+        <b>(Middle)</b> Goal: Employ the gripper tool to pick up the desired object and move it to the intended location, notwithstanding the hindrance of a wall in the path. <b>(Right)</b> Goal: Position the gripper to reach the target area, with awareness of the wall obstructing the path.
       </h2>
     </div>
   </div>
@@ -277,6 +275,12 @@
       <img src="static/images/result.png">
       <figcaption>
         KALM is compatible with wide range of offline RL algorithms, enabling agents to acquire novel skills beyond the pre-collected environment data.
+      </figcaption>
+      </figure>
+      <figure style="width: 60%; margin: 0 auto; text-align: center;">
+      <img src="static/images/imaginary_rollouts.png">
+      <figcaption>
+        KALM enables LLM to imagine novel rollouts unseen before. In (a), LLM is never trained with data containing "wall", but it raises the robotics arm to avoid colliding the wall. In (b), LLM is only trained with goals like "move blue ball to the left of red ball."
       </figcaption>
       </figure>
       </div>
